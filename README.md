@@ -1,4 +1,4 @@
-# TFG-TPMS---Samuel-Arribas-Martin
+# TFG-TPMS-Samuel-Arribas-Martin
 
 ## 1. Descripción
 
