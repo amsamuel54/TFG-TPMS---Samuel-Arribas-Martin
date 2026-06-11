@@ -1,0 +1,298 @@
+{
+    "actions": [
+    ],
+    "groups": [
+        {
+            "datasets": [
+                {
+                    "alarmEnabled": true,
+                    "alarmHigh": 2.3,
+                    "alarmLow": 2,
+                    "fft": false,
+                    "fftMax": 0,
+                    "fftMin": 0,
+                    "fftSamples": 256,
+                    "fftSamplingRate": 100,
+                    "graph": false,
+                    "index": 1,
+                    "led": false,
+                    "ledHigh": 80,
+                    "log": false,
+                    "overviewDisplay": true,
+                    "plotMax": 0,
+                    "plotMin": 0,
+                    "title": "PRESION",
+                    "units": "Bar",
+                    "value": "--.--",
+                    "widget": "gauge",
+                    "widgetMax": 3,
+                    "widgetMin": 1,
+                    "xAxis": -1
+                },
+                {
+                    "alarmEnabled": false,
+                    "alarmHigh": 80,
+                    "alarmLow": 20,
+                    "fft": false,
+                    "fftMax": 0,
+                    "fftMin": 0,
+                    "fftSamples": 256,
+                    "fftSamplingRate": 100,
+                    "graph": false,
+                    "index": 2,
+                    "led": false,
+                    "ledHigh": 80,
+                    "log": false,
+                    "overviewDisplay": true,
+                    "plotMax": 0,
+                    "plotMin": 0,
+                    "title": "TEMPERATURA",
+                    "units": "ºC",
+                    "value": "--.--",
+                    "widget": "bar",
+                    "widgetMax": 80,
+                    "widgetMin": 0,
+                    "xAxis": -1
+                },
+                {
+                    "alarmEnabled": false,
+                    "alarmHigh": 80,
+                    "alarmLow": 20,
+                    "fft": false,
+                    "fftMax": 0,
+                    "fftMin": 0,
+                    "fftSamples": 256,
+                    "fftSamplingRate": 100,
+                    "graph": false,
+                    "index": 3,
+                    "led": false,
+                    "ledHigh": 80,
+                    "log": false,
+                    "overviewDisplay": true,
+                    "plotMax": 0,
+                    "plotMin": 0,
+                    "title": "HUMEDAD RELATIVA",
+                    "units": "%",
+                    "value": "--.--",
+                    "widget": "gauge",
+                    "widgetMax": 100,
+                    "widgetMin": 0,
+                    "xAxis": -1
+                },
+                {
+                    "alarmEnabled": false,
+                    "alarmHigh": 80,
+                    "alarmLow": 20,
+                    "fft": false,
+                    "fftMax": 0,
+                    "fftMin": 0,
+                    "fftSamples": 256,
+                    "fftSamplingRate": 100,
+                    "graph": true,
+                    "index": 4,
+                    "led": false,
+                    "ledHigh": 80,
+                    "log": false,
+                    "overviewDisplay": true,
+                    "plotMax": 3,
+                    "plotMin": -3,
+                    "title": "TENG",
+                    "units": "V",
+                    "value": "--.--",
+                    "widget": "",
+                    "widgetMax": 100,
+                    "widgetMin": 0,
+                    "xAxis": 0
+                },
+                {
+                    "alarmEnabled": false,
+                    "alarmHigh": 80,
+                    "alarmLow": 20,
+                    "fft": false,
+                    "fftMax": 0,
+                    "fftMin": 0,
+                    "fftSamples": 256,
+                    "fftSamplingRate": 100,
+                    "graph": false,
+                    "index": 5,
+                    "led": true,
+                    "ledHigh": 80,
+                    "log": false,
+                    "overviewDisplay": false,
+                    "plotMax": 0,
+                    "plotMin": 0,
+                    "title": "ALARMA TENG",
+                    "units": "",
+                    "value": "--.--",
+                    "widget": "",
+                    "widgetMax": 0,
+                    "widgetMin": 0,
+                    "xAxis": -1
+                }
+            ],
+            "title": "Rueda 1",
+            "widget": ""
+        }
+    ],
+    "hexadecimalDelimiters": false,
+    "pointCount": 100,
+    "sources": [
+        {
+            "busType": 0,
+            "checksum": "",
+            "checksumAlgorithm": "",
+            "connection": {
+                "autoReconnect": false,
+                "baudRate": 10,
+                "dataBitsIndex": 3,
+                "deviceId": {
+                    "description": "Silicon Labs CP210x USB to UART Bridge",
+                    "pid": "EA60",
+                    "portName": "COM3",
+                    "serial": "0001",
+                    "vid": "10C4"
+                },
+                "dtr": true,
+                "flowControlIndex": 0,
+                "parityIndex": 0,
+                "portIndex": 1,
+                "stopBitsIndex": 0
+            },
+            "decoder": 0,
+            "decoderMethod": 0,
+            "frameDetection": 1,
+            "frameEnd": "*/",
+            "frameParserCode": "\nfunction parse(frame) {\n    var datos = frame.split(',');\n    return [datos[1],datos[2],datos[3],datos[4],datos[5]\n    ];\n}",
+            "frameStart": "/*",
+            "hexadecimalDelimiters": false,
+            "sourceId": 0,
+            "title": "NODO RECEPTOR"
+        }
+    ],
+    "title": "Telemetría TPMS V2",
+    "widgetSettings": {
+        "activeGroup": 0,
+        "layout:-1": {
+            "data": {
+                "autoLayout": true,
+                "windowOrder": [
+                    0,
+                    2,
+                    3,
+                    4,
+                    5
+                ]
+            }
+        },
+        "layout:-2": {
+            "data": {
+                "autoLayout": false,
+                "geometries": [
+                    {
+                        "height": 611,
+                        "id": 0,
+                        "state": "normal",
+                        "width": 860,
+                        "x": 0,
+                        "y": 0
+                    },
+                    {
+                        "height": 723,
+                        "id": 1,
+                        "state": "normal",
+                        "width": 937,
+                        "x": 417,
+                        "y": 275
+                    },
+                    {
+                        "height": 724,
+                        "id": 2,
+                        "state": "normal",
+                        "width": 937,
+                        "x": 1188,
+                        "y": 278
+                    },
+                    {
+                        "height": 320,
+                        "id": 3,
+                        "state": "normal",
+                        "width": 356,
+                        "x": 0,
+                        "y": 0
+                    },
+                    {
+                        "height": 320,
+                        "id": 4,
+                        "state": "normal",
+                        "width": 356,
+                        "x": 0,
+                        "y": 0
+                    },
+                    {
+                        "height": 320,
+                        "id": 5,
+                        "state": "normal",
+                        "width": 356,
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "windowOrder": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5
+                ]
+            }
+        },
+        "layout:0": {
+            "data": {
+                "autoLayout": true,
+                "windowOrder": [
+                    0,
+                    2,
+                    3,
+                    4,
+                    5
+                ]
+            }
+        },
+        "layout:1": {
+            "data": {
+                "autoLayout": false,
+                "geometries": [
+                    {
+                        "height": 1214,
+                        "id": 0,
+                        "state": "normal",
+                        "width": 356,
+                        "x": 1,
+                        "y": 2
+                    },
+                    {
+                        "height": 320,
+                        "id": 1,
+                        "state": "normal",
+                        "width": 356,
+                        "x": 356,
+                        "y": 2
+                    }
+                ],
+                "windowOrder": [
+                    0,
+                    1
+                ]
+            }
+        },
+        "layout:2": {
+            "data": {
+                "autoLayout": true,
+                "windowOrder": [
+                    0
+                ]
+            }
+        }
+    }
+}
