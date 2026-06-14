@@ -30,6 +30,6 @@ PASO 2: Cargar los proyectos <<NODO_EMISOR>> y <<NODO_RECEPTOR>> por separado en
 
 PASO 3: Descargar e instalar Serial Studio.
 
-Paso 4: En la ventana lateral derecha, configurar el proyecto antes de establecer la conexión con la placa. Cargar el archivo <<Telemetría TPMS V2.ssproj>>, seleccionar el puerto COM adecuado y establecer la tasa de baudios a 115200. El resto de valores pueden permanecer por defecto.
+PASO 4: En la ventana lateral derecha, configurar el proyecto antes de establecer la conexión con la placa. Cargar el archivo <<Telemetría TPMS V2.ssproj>>, seleccionar el puerto COM adecuado y establecer la tasa de baudios a 115200. El resto de valores pueden permanecer por defecto.
 
 PASO 5: Una vez esté realizada la configuración, pulsar el botón de la esquina superior derecha <<CONECTAR>>.
